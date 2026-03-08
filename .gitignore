@@ -216,4 +216,7 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 mlsys26-contest/
-solution/cuda
+solution/cuda/
+solution/original_kernel_impl/
+solution/triton/kernel_ds.py
+solution/triton/kernel_old.py

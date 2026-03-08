@@ -1,0 +1,29 @@
+export FIB_INPROCESS_BENCH=1; export FIB_MAX_WORKLOADS=1; python scripts/run_local.py
+
+
+
+## for running all the workloads
+
+
+export FIB_DATASET_PATH="/mnt/d/Programming/cuda/flashinfer-bench-starter-kit/mlsys26-contest"; 
+export FIB_MAX_WORKLOADS=1; 
+export FIB_VERBOSE_DEBUG=0; 
+export FIB_INPROCESS_BENCH=1
+/home/direct11/anaconda3/envs/fi-bench/bin/python scripts/run_local_modify.py
+
+
+
+
+export FIB_DATASET_PATH="/mnt/d/Programming/cuda/flashinfer-bench-starter-kit/mlsys26-contest"; 
+export FIB_MAX_WORKLOADS=1; 
+export FIB_VERBOSE_DEBUG=0; 
+export FIB_INPROCESS_BENCH=1
+/home/direct11/anaconda3/envs/fi-bench/bin/python scripts/run_local_original.py
+
+
+#rm -rf ~/.cache/flashinfer_bench/cache/python/ 2>/dev/null; export FIB_DATASET_PATH="/mnt/d/Programming/cuda/flashinfer-bench-starter-kit/mlsys26-contest" FIB_MAX_WORKLOADS=1 FIB_VERBOSE_DEBUG=0 FIB_INPROCESS_BENCH=1; /home/direct11/anaconda3/envs/fi-bench/bin/python scripts/run_local_original.py 2>&1
+
+
+
+# final:
+#cd /mnt/d/Programming/cuda/flashinfer-bench-starter-kit && FIB_DATASET_PATH=/mnt/d/Programming/cuda/flashinfer-bench-starter-kit/mlsys26-contest FIB_MAX_WORKLOADS=5 FIB_INPROCESS_BENCH=1 /home/direct11/anaconda3/envs/fi-bench/bin/python scripts/run_local_modify.py 2>&1 | tail -12

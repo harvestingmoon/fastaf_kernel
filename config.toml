@@ -1,0 +1,13 @@
+[solution]
+name = "my-team-solution-v1"      # Solution name
+# Switch definition/entry_point to benchmark the desired track:
+#   Prefill: definition = "gdn_prefill_qk4_v8_d128_k_last"   entry_point = "binding.py::kernel"
+#   Decode:  definition = "gdn_decode_qk4_v8_d128_k_last"    entry_point = "binding.py::kernel_decode"
+#definition = "gdn_decode_qk4_v8_d128_k_last"     # Track: decode
+definition = "gdn_prefill_qk4_v8_d128_k_last"
+author = "team-name"              # Team/author name
+
+[build]
+language = "triton"               # triton | cuda | python
+entry_point = "kernel.py::kernel" # Kernel function: kernel (prefill) | kernel_decode (decode)
+destination_passing_style = false  # false = kernel allocates + returns outputs
